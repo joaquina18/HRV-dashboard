@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>HRV Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>📊 HRV Dashboard — ECG en Tiempo Real</h1>
+
+        <div class="cards">
+            <div class="card">
+                <h2>BPM</h2>
+                <p id="bpm">--</p>
+            </div>
+            <div class="card">
+                <h2>RMSSD</h2>
+                <p id="rmssd">--</p>
+            </div>
+            <div class="card">
+                <h2>SDNN</h2>
+                <p id="sdnn">--</p>
+            </div>
+            <div class="card small">
+                <h2>WS</h2>
+                <p id="ws-status">OFF</p>
+            </div>
+        </div>
+
+        <canvas id="ecgChart"></canvas>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
