@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>HRV Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<meta charset="UTF-8">
+<title>HRV Dashboard</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1>📊 HRV Dashboard — ECG en Tiempo Real</h1>
 
-        <div class="cards">
-            <div class="card">
-                <h2>BPM</h2>
-                <p id="bpm">--</p>
-            </div>
-            <div class="card">
-                <h2>RMSSD</h2>
-                <p id="rmssd">--</p>
-            </div>
-            <div class="card">
-                <h2>SDNN</h2>
-                <p id="sdnn">--</p>
-            </div>
-            <div class="card small">
-                <h2>WS</h2>
-                <p id="ws-status">OFF</p>
-            </div>
-        </div>
+<h1>Dashboard de HRV</h1>
 
-        <canvas id="ecgChart"></canvas>
-    </div>
+<div class="card">
+    <p class="label">Frecuencia Cardíaca (BPM)</p>
+    <p id="bpm" class="value">...</p>
+</div>
 
-    <script src="app.js"></script>
+<div class="card">
+    <p class="label">RMSSD</p>
+    <p id="rmssd" class="value">...</p>
+</div>
+
+<div class="card">
+    <p class="label">SDNN</p>
+    <p id="sdnn" class="value">...</p>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
